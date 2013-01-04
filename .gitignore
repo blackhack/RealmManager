@@ -12,3 +12,8 @@
 *.la
 *.a
 /Visual2012/RealmManager.vcxproj.user
+/Visual2012/Debug
+/Visual2012/Release
+/Visual2012/RealmManager.opensdf
+/Visual2012/RealmManager.sdf
+/Visual2012/RealmManager.v11.suo
