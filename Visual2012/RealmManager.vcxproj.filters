@@ -40,5 +40,8 @@
     <EmbeddedResource Include="..\src\FavoritesForm.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\src\RealmManagerForm.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
