@@ -123,9 +123,8 @@ namespace RealmManager {
             this->Dir_Label->AutoSize = true;
             this->Dir_Label->Location = System::Drawing::Point(12, 38);
             this->Dir_Label->Name = L"Dir_Label";
-            this->Dir_Label->Size = System::Drawing::Size(52, 13);
+            this->Dir_Label->Size = System::Drawing::Size(0, 13);
             this->Dir_Label->TabIndex = 3;
-            this->Dir_Label->Text = L"Dir_Label";
             // 
             // clientBox
             // 
