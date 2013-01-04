@@ -99,13 +99,13 @@ System::Void RealmManager::RealmManagerForm::FavButton1_Click(System::Object^ se
 
 System::Void RealmManager::RealmManagerForm::FavButton2_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    NewRealmText->Text = gcnew String(Fav1.c_str());
+    NewRealmText->Text = gcnew String(Fav2.c_str());
     SaveRealmlist();
 }
 
 System::Void RealmManager::RealmManagerForm::FavButton3_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    NewRealmText->Text = gcnew String(Fav1.c_str());
+    NewRealmText->Text = gcnew String(Fav3.c_str());
     SaveRealmlist();
 }
 

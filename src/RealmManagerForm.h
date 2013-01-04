@@ -207,7 +207,6 @@ namespace RealmManager {
             // 
             // FavFormButton
             // 
-            this->FavFormButton->Enabled = false;
             this->FavFormButton->Location = System::Drawing::Point(189, 178);
             this->FavFormButton->Name = L"FavFormButton";
             this->FavFormButton->Size = System::Drawing::Size(119, 23);
@@ -290,7 +289,7 @@ namespace RealmManager {
             this->MaximizeBox = false;
             this->MinimizeBox = false;
             this->Name = L"RealmManagerForm";
-            this->Text = L"RealmManagerForm";
+            this->Text = L"RealmManager";
             this->Load += gcnew System::EventHandler(this, &RealmManagerForm::RealmManagerForm_Load);
             this->ResumeLayout(false);
             this->PerformLayout();
