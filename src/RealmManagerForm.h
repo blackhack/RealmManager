@@ -54,9 +54,6 @@ namespace RealmManager {
     private: System::Windows::Forms::Button^  NoButton;
     private: System::Windows::Forms::Timer^  UpdateTimer;
     private: System::ComponentModel::IContainer^  components;
-    protected: 
-
-    protected: 
 
 	private:
 		/// <summary>

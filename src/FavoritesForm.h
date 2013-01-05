@@ -35,7 +35,6 @@ namespace RealmManager {
 			}
 		}
     private: System::Windows::Forms::TextBox^  Fav1Text;
-    protected: 
     private: System::Windows::Forms::TextBox^  Fav2Text;
     private: System::Windows::Forms::TextBox^  Fav3Text;
     private: System::Windows::Forms::Button^  SaveFavButton;
@@ -44,13 +43,6 @@ namespace RealmManager {
     private: System::Windows::Forms::Label^  Favorito3Label;
     private: System::Windows::Forms::Label^  Favorito2Label;
     private: System::Windows::Forms::Label^  Favorito1Label;
-
-
-
-
-
-
-    protected: 
 
 	private:
 		/// <summary>
