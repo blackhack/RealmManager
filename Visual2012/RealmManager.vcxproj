@@ -142,6 +142,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -157,6 +158,12 @@
     <EmbeddedResource Include="..\src\RealmManagerForm.resx">
       <DependentUpon>..\src\FavoritesForm.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RealmManager.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
