@@ -151,3 +151,17 @@ System::Void RealmManager::RealmManagerForm::UpdateTimer_Tick(System::Object^ se
 {
     OpenRealmlist();
 }
+
+System::Void RealmManager::RealmManagerForm::cache_del_button_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    std::string dir = WowDir + "\\" + "Cache";
+    String^ Str_dir = gcnew String(dir.c_str());
+
+    if (System::IO::Directory::Exists(Str_dir))
+    {
+        System::IO::Directory::Delete(Str_dir, true);
+        MessageBox::Show("Se a borrado la carpeta Cache.");
+    }
+    else
+        MessageBox::Show("No existe la carpeta Cache, seguramente ya fue borrada.");
+}

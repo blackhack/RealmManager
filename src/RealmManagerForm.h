@@ -53,6 +53,8 @@ namespace RealmManager {
     private: System::Windows::Forms::Button^  YesButton;
     private: System::Windows::Forms::Button^  NoButton;
     private: System::Windows::Forms::Timer^  UpdateTimer;
+    private: System::Windows::Forms::Button^  cache_del_button;
+
     private: System::ComponentModel::IContainer^  components;
 
 	private:
@@ -88,6 +90,7 @@ namespace RealmManager {
             this->YesButton = (gcnew System::Windows::Forms::Button());
             this->NoButton = (gcnew System::Windows::Forms::Button());
             this->UpdateTimer = (gcnew System::Windows::Forms::Timer(this->components));
+            this->cache_del_button = (gcnew System::Windows::Forms::Button());
             this->SuspendLayout();
             // 
             // DirSelect
@@ -163,9 +166,9 @@ namespace RealmManager {
             // 
             // ExitButton
             // 
-            this->ExitButton->Location = System::Drawing::Point(12, 226);
+            this->ExitButton->Location = System::Drawing::Point(137, 226);
             this->ExitButton->Name = L"ExitButton";
-            this->ExitButton->Size = System::Drawing::Size(102, 23);
+            this->ExitButton->Size = System::Drawing::Size(85, 23);
             this->ExitButton->TabIndex = 8;
             this->ExitButton->Text = L"Salir.";
             this->ExitButton->UseVisualStyleBackColor = true;
@@ -213,7 +216,7 @@ namespace RealmManager {
             // 
             // OpenWow
             // 
-            this->OpenWow->Location = System::Drawing::Point(134, 226);
+            this->OpenWow->Location = System::Drawing::Point(12, 226);
             this->OpenWow->Name = L"OpenWow";
             this->OpenWow->Size = System::Drawing::Size(119, 23);
             this->OpenWow->TabIndex = 13;
@@ -258,12 +261,23 @@ namespace RealmManager {
             this->UpdateTimer->Enabled = true;
             this->UpdateTimer->Tick += gcnew System::EventHandler(this, &RealmManagerForm::UpdateTimer_Tick);
             // 
+            // cache_del_button
+            // 
+            this->cache_del_button->Location = System::Drawing::Point(12, 197);
+            this->cache_del_button->Name = L"cache_del_button";
+            this->cache_del_button->Size = System::Drawing::Size(119, 23);
+            this->cache_del_button->TabIndex = 17;
+            this->cache_del_button->Text = L"Borrar Cache.";
+            this->cache_del_button->UseVisualStyleBackColor = true;
+            this->cache_del_button->Click += gcnew System::EventHandler(this, &RealmManagerForm::cache_del_button_Click);
+            // 
             // RealmManagerForm
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
             this->ClientSize = System::Drawing::Size(402, 261);
             this->ControlBox = false;
+            this->Controls->Add(this->cache_del_button);
             this->Controls->Add(this->UnInstallButton);
             this->Controls->Add(this->OpenWow);
             this->Controls->Add(this->FavFormButton);
@@ -311,5 +325,6 @@ private:
     System::Void FavButton3_Click(System::Object^ sender, System::EventArgs^ e);
     System::Void OpenWow_Click(System::Object^ sender, System::EventArgs^ e);
     System::Void UpdateTimer_Tick(System::Object^  sender, System::EventArgs^  e);
+    System::Void cache_del_button_Click(System::Object^  sender, System::EventArgs^  e);
 };
 }
